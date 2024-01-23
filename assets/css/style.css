@@ -1,29 +1,35 @@
 /* LES REGLAGES GENERALES*/
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: Century Gothic;
-    font-size: 16px;
+*{padding: 0px;margin: 0px;font-family: Yu Gothic UI Semibold;font-size: 16px;
     color: white;
     box-sizing: border-box;
 }
 
 body{
-    color: rgb(8, 8, 8);
-    background: linear-gradient(71deg, #080509, #1a171c, #080509);
-}
-li{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-.align-center{
+    /* background: linear-gradient(71deg, #080509, #1a171c, #080509); */
+    background-image: radial-gradient(circle at top right, #000000, #161414, #090909);
+    background-attachment: fixed;
+}li{list-style-type: none;}a{text-decoration: none;}
+.container-align-center{
     display: flex;
     justify-content: center;
     width: 100%;
+}
+h3{
+    font-size: xxx-large;
+    margin-bottom: 4%;
+    margin-right: 0;
+    width: max-content;
+    
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #6961f5,#e83daf, #9042F6,#5aa0f5);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #6961f5,#e83daf, #9042F6,#5aa0f5);
+  }
+.align-center{
+    text-align: center;
 }
 /*FIN DES REGLAGES GENERALES*/
 
@@ -45,7 +51,7 @@ a{
 nav{
     text-align: center;
     position: fixed;
-    top: 0;
+    top: 10px;
     z-index: 1;
     right: 0;
     left: 0;
@@ -69,20 +75,19 @@ nav{
 
 
     @media all and (max-width:768px){
-        .icon-menu{
+        label i{
             visibility: visible;
         }
     }
 
     .icone-menu{
-        color: white;
         position: fixed;
         visibility: hidden;
         right: 5%;
         top: 2%;
     }
 
-    .icon-menu{
+    label i{
         font-size: xxx-large;
         cursor: pointer;
 
@@ -93,7 +98,7 @@ nav{
         /* Préfixes pour les navigateurs basés sur WebKit */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(to right, #0FC2C0, #0CABA8,#008F8C, #015958, #023535);
+        background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
     }
 
     .container-menu{
@@ -134,18 +139,23 @@ nav{
         #menu>li{
             padding: 10px;
         }
-        #menu a{
-        /* color: black; */
-        color: rgba(12, 171, 168, 1); 
+        #menu a{ 
         font-weight: 610;
         cursor: pointer;
         padding: 3px;
-        border-bottom:0px solid black;
         -webkit-transition: border 1s ease-out ;
         -moz-transition: border 1s ease-out;
         -o-transition: all 1s ease-out;
         transition: border 1s ease-out;
-            }
+        
+            background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
+        
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
+          }
                 
         #menu>li>a{
             position: relative;
@@ -183,53 +193,106 @@ nav{
         flex-direction: column;
         padding-top: 2%;
     }
-.img-hero  {
+.kimg-hero  {
     width: 150px;
     height: 150px;
     text-align: center;
-    shape-outside: polygon();
     border-radius: 100%;
     overflow: hidden;
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
-    border: .36rem solid rgba(12, 171, 168, 1);;
-}
-.img-hero > img{
+    
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    border-radius: 100%;
+    padding: 5px;
+    
+    }
+    
+    .kimg-hero::after {
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: -5px;
+        right: -5px;
+        content: "";
+        z-index: -1;
+        border-radius: 100%;
+        padding: 2%;
+        background: linear-gradient(71deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
+      }
+
+      .img-hero {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; /* Transforme le rectangle en cercle */
+        background: black; /* Fond noir */
+        /* overflow: hidden; */
+        /* padding: 1%; */
+      }
+      
+      .img-hero::before,
+      .img-hero::after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        border-radius: 50%; /* Forme circulaire */
+      }
+      
+      .img-hero::before {
+        border: 5px solid transparent; /* Bordure transparente */
+        background: linear-gradient(71deg, #6961f5,#e83daf, #9042F6,#5aa0f5); /* Dégradé pour la bordure */
+      }
+      
+      .img-hernmo::after {
+        border: 5px solid black; /* Bordure noire */
+      }
+.img-hero > .img-subcontainer{
     width: auto;
-    /* height: 100%; */
-    filter: grayscale(50);
+    height: 100%;
+    /* filter: grayscale(50); */
+    overflow: hidden;
+    border-radius: 50%;
 }
 
+.hero-text-item{margin-top: 1.2%;}
 .hero-part-2{
     padding-left: 7%;
     padding-right: 7%;
-    padding-top: 2%;
+    padding-top: 0.8%;
     overflow: hidden;
     display: inline-block;
 }
 
-.slider-hero p{
-    font-size: x-large;
-}
-
-.slider-hero span{
-    font-size: 3.5rem;
-}
+.slider-hero h1{font-size: 3rem;}
+.slider-hero h2{font-size: 2rem;}
+.slider-hero span{font-size: 3rem;}
 
 @media screen and (max-width:768px) {
-    .slider-hero span{
-        font-size: 2.8rem;
-    }
-}
-.color-green{
-    color: rgba(12, 171, 168, 1);;
-    font-weight: 600;
+    .slider-hero h1{font-size: 1.7rem;}
+    .slider-hero h2{font-size: 1.2rem;}
+    .slider-hero span{font-size: 1.7rem;}
 }
 
-.text-slide{
-    margin-top: 3%;
-}
+    .colored{
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
 
-#cta{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
+    font-weight: 600;}
+
+.slider-hero .text-slide{margin-top: 3%;font-size: 1.1rem;}
+
+.cta-button{
     display: block;
     padding: .9em;
     margin: 3%;
@@ -245,7 +308,7 @@ nav{
     border-radius: 45px;
 }
 
-#cta::after {
+.cta-button::after {
     position: absolute;
     top: -1px;
     bottom: -1px;
@@ -260,29 +323,17 @@ nav{
 
 /* --------------------ABOUT-------------------- */
 .about{
-    /* background: radial-gradient( #282c34 0%, rgba(17, 0, 32, 0.5) 100%); */
     padding: 5%;
     margin: 10%;
     display: flex;
     justify-content: space-around;
-    /* box-shadow: 0 7px 20px 5px #00000088; */
     align-items: center;
     position: relative;
-    /* border: 2px solid transparent; */
-    /* background-clip: padding-box; */
-    /* background: rgb(75,73,74); */
-    /* background: radial-gradient(circle, rgba(75,73,74,1) 0%, rgba(3,6,9,1) 100%); */
-
+    
     position: relative;
-	/* width: 300px; */
-	/* height: 400px; */
 	background: rgba(255, 255, 255, 0.05);
-	/* margin: 20px; */
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
-	/* display: flex; */
-	/* justify-content: center; */
-	/* align-items: center; */
 	backdrop-filter: blur(10px);
 }
 
@@ -294,14 +345,6 @@ nav{
     }
 }
 
-.about  h1{
-    text-align: left;
-    color: #0e0f0e;
-    font-size: xxx-large;
-    margin-bottom: 4%;
-    margin-right: 0;
-    text-shadow: 0 2px 4px #015958;
-}
 .img-gray{
     filter: grayscale(5);
     width: auto;
@@ -432,14 +475,6 @@ nav{
 /* --------------------FIN SERVICE-------------------- */
 
 /* --------------------REALISATION-------------------- */
-#realisation h1{
-    text-align: center;
-    color: #0e0f0e;
-    font-size: xxx-large;
-    /* margin-bottom: 4%; */
-    /* margin-right: 0; */
-    text-shadow: 0 2px 4px #015958;
-}
 
 .container-realisation{
     padding-right: 5%;
@@ -553,14 +588,6 @@ nav{
     font-size: 1.1rem;
 }
 
-#contact  h1{
-    text-align: center;
-    color: #0e0f0e;
-    font-size: xxx-large;
-    margin-bottom: 1%;
-    margin-right: 0;
-    text-shadow: 0 2px 4px #015958;
-}
 
     @media screen and (max-width:768px){
         #contact{
@@ -594,6 +621,10 @@ nav{
     padding: 1%;
 }
 
+#contact .icon-markunread,#contact .icon-phone-square,#contact .icon-whatsapp,#contact .icon-telegram{
+    font-size: 30px;
+    margin: 1%;
+}
 .container-coordonne p{
     max-width: 300px;
     margin: 5%;
@@ -627,10 +658,17 @@ nav{
     text-align: center;
     font-size: 25px;
 
-    color: #0e0f0e;
     margin-bottom: 4%;
     margin-right: 0;
     text-shadow: 0 2px 4px #015958;
+
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
 }
 
 .social{
@@ -649,12 +687,12 @@ nav{
 
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to right, #0FC2C0, #0CABA8,#008F8C, #015958, #023535);
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
         
     /* Préfixes pour les navigateurs basés sur WebKit */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #0FC2C0, #0CABA8,#008F8C, #015958, #023535);
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
 }
 /* --------------------FIN CONTACT-------------------- */
 
@@ -662,6 +700,7 @@ nav{
 .footer{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     background: #080509;
     padding: 5%;
     justify-content: space-around;
@@ -669,29 +708,48 @@ nav{
 }
 
 .footer>ul li:first-child{
-    text-align: center;
+    text-align: left;
     font-size: 25px;
 
-    color: #0e0f0e;
     margin-bottom: 4%;
     margin-right: 0;
     text-shadow: 0 2px 1px #015958;
+    border-bottom: #e83daf 2px solid;
+
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
 }
 
 .footer li{
     margin: 3%;
 }
 
+.footer ul:last-child{
+    text-align: center;
+}
+
 .foot-social i{
-    text-shadow: 0 2px 1px #015958;
+    font-size: 1.6rem;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(140deg, #6961f5,#e83daf, #9042F6,#5aa0f5);
 }
 /* --------------------copyrigth */
 #copyrigth{
     text-align: center;
     padding: 1%;
-    color: #023535;
+    color: #5aa0f5;
 }
 
 #copyrigth span{
-    color: #017f88;
+    color: #9042F6;
 }

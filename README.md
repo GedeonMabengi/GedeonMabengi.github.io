@@ -1,7 +1,7 @@
-#Portfolio
+# Portfolio
 Ce dépôt contient mon portfolio personnel, qui présente mes compétences, mes projets et mon expérience professionnelle. Il a été créé dans le but de partager mes réalisations et d'attirer l'attention des employeurs potentiels.
 
-##Contenu
+## Contenu
 Le portfolio est structuré de la manière suivante :
 
 * **À propos de moi** : une brève introduction à propos de qui je suis, mes objectifs professionnels et mes intérêts.

@@ -3,113 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/vendor/slick-1.8.1/slick/slick.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/> -->
-
-    <link rel="stylesheet" type="text/css" href="assets/vendor/slick-1.8.1/slick/slick-theme.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/> -->
-
-    <link rel="stylesheet" href="assets/vendor/icomoon/style.css">
+    <link rel="stylesheet" href="assets/css/style.css"/><!--main style-->
+    <script src="https://kit.fontawesome.com/15cf292b55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <title>Gédéon Mabengi</title>
 </head>
 <body>
-    
-  <div id="logo">
-        LOGO
-  </div>
-
+  <div id="logo"><img src="assets/img/logo.webp" alt="" srcset=""></div>
   <nav>
-        <label for="menu-cb" class="menu-label">
-            <div class="icone-menu"><i id="open-menu" class="icon-menu"></i></div>
-        </label>
+    <input type="checkbox" id="cb">
 
-        <input type="checkbox" id="menu-cb" class="menu-cb">
-        
-        <div class="container-menu">
-          <ul id="menu">
-            <li><a href="#">Acceuil</a></li>
-            <li><a href="#apropos">A propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#realisation">Realisation</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        
+		<label for="cb">
+			<i id="open-menu" class="fa-solid fa-bars icon-bars icon"></i>
+		</label>
+		
+		<ul id="menu">
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#apropos">A propos</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#realisation">Realisation</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
   </nav>
 
   <section class="hero">
-
     <div class="hero-part-1">
         <div class="img-hero">
-          <img class="img-gray" src="assets/img/img-hero.png" alt="" srcset="">
+          <div class="img-subcontainer">
+            <img class="img-gray" src="assets/img/me.png" alt="" srcset="">
+          </div>
         </div>
-
         <div class="hero-text-item">
-          Hello Word! I am Gédéon Mabengi a
+          Salut ! Moi, c'est Gédéon Mabengi. Je suis un développeur web Full-Stack.
         </div>
     </div>
       
-    <div class="hero-part-2" >
+    <div class="hero-part-2">
       <div class="slider-hero">
-          <p>
-            <span>Laravel Web <span class="color-green">Develloper</span></span>.
+          <h1>Talentueux <span class="colored">développeur web Full-Stack</span></h1>
+          <h2>Passionné de PHP, Laravel, Git et bien plus encore</h2>
+          <p>Je suis un développeur web Full-Stack expérimenté, spécialisé dans les technologies telles que PHP,
+            Laravel, Git et bien d'autres. Je suis constamment à la recherche de nouveaux défis passionnants et
+            je suis prêt à apporter mes compétences et mon expertise à votre équipe. Découvrez mon portfolio pour
+            en savoir plus sur mes réalisations.
           </p>
-            
-          <p class="text-slide">
-              Grace a ma maitrise du language PHP et son framework Laravel, je suis en mesure de creer des applis web.
-          </p>
-
-          <div class="align-center">
-            <a id="cta" href="">M'embaucher</a>
+          <div class="container-align-center">
+            <a class="cta-button" href="#">Mes compétences</a>
           </div>
-          
       </div>
 
       <div class="slider-hero">
-          <p>
-            <span>Fron-end web<span class="color-green">Develloper</span></span>.
-            
-            <p>
-              Besion d'un site web vitrine moderne? Je suis la pour vous servir.
-              Je maitrise taillwind css, Bootstrap, UIKIT, Bulma, slick et React.
-            </p>
-          </p>
-
-          <div class="align-center">
-            <a id="cta" href="">Collaborer avec moi</a>
-          </div>
+        <h1>Collaborons pour créer des <span class="colored">projets exceptionnels</span></h1>
+        <h2>Expert en HTML, CSS, JS, Bootstrap, UIKit et Tailwind CSS</h2>
+        <p>Je suis un développeur web Full-Stack compétent dans les technologies front-end telles que HTML, CSS, JavaScript, Bootstrap, UIKit et Tailwind CSS. Je suis passionné par la création d'interfaces utilisateur élégantes et réactives. Si vous êtes à la recherche d'un collaborateur pour concrétiser vos idées en ligne, ne cherchez plus ! Découvrez mes projets antérieurs et contactez-moi pour discuter de nos futures collaborations.</p>
+        <div class="container-align-center">
+          <a class="cta-button" href="#">Mes projets</a>
+        </div>
       </div>
-        
+      
       <div class="slider-hero">
-          <p>
-            <span>passionné du <span class="color-green">Blogging & la creation de contenu</span></span>.
-            
-            <p>
-              maxime nobis. Vel fuga molestias dolores
-              possimus iusto voluptatum neque reiciendis, nisi id atque.
-            </p>
-          </p>
-
-          <div class="align-center">
-            <a id="cta" href="">Me contacter</a>
-          </div>
-      </div>
-        
+        <h1>Transformez votre vision en <span class="colored">réalité</span> en ligne</h1>
+        <h2>Expérience avec React pour des applications web dynamiques</h2>
+        <p>Que vous souhaitiez créer une application web complète ou améliorer votre site existant, je suis là pour vous aider. Avec mes compétences en développement web Full-Stack et ma maîtrise de technologies telles que React, je peux transformer votre vision en réalité en ligne. Découvrez mes réalisations passées et contactez-moi pour discuter de votre projet. Ensemble, nous pouvons créer une solution personnalisée qui répondra à vos besoins.</p>
+        <div class="container-align-center">
+          <a class="cta-button" href="#">Me contacter</a>
+        </div>
     </div>
-  
-  </section>
+  </div>
+</section>
 
   <section class="about" id="apropos">
 
     
     <div class="img-about">
-      <img class="img-gray" src="assets/img/hero-img.png" alt="" srcset="">
+      <img class="img-gray" src="assets/img/about.png" alt="" srcset="">
     </div>
     
     <div class="container-text-about">
-      <h1>A propos</h1>
+      <h3 class="title">A propos</h3>
 
       <div class="text-about">
         Je suis un développeur web passionné et polyvalent. Prèt à apporter mes compétences des mathématque, en informatique et développement web.
@@ -117,147 +89,199 @@
         et une expérience professionnelle en développement web, je suis capable de combiner ces deux domaines pour offrir des résultants exceptionnels.
       </div>
 
-      <div id="button-about" class="alvign-center">
-        <a href="assets/cv.pdf" id="cta">Telecharcher mon CV</a>
-        <!-- <a href="#" id="cta">M'embaucher</a> -->
+      <div id="button-about" class="align-center">
+        <a href="assets/cv.pdf" class="cta-button">Telecharcher mon CV</a>
       </div>
     </div>
   </section>
 
+  <section id="competences">
+    <div class="container-align-center">
+      <h3 class="align-center title">Compétences</h3>
+    </div>
+    <div class="container-competance">
+
+      <div class="item-competence">
+        <div class="icon-competence">
+          <i class="fa-brands fa-laravel icon"></i>
+        </div>
+        <h4>Laravel</h4>
+        <div class="progress p75"></div>
+        <div class="pourcent">75%</div>
+      </div>
+      
+      <div class="item-competence">
+        <div class="icon-competence">
+          <i class="fa-brands fa-php icon"></i>
+        </div>
+        <h4>PHP</h4>
+        <div></div>
+        <div class="progress p80"></div>
+        <div class="pourcent">80%</div>
+      </div>
+
+      <div class="item-competence">
+        <div class="icon-competence">
+          <i class="fa-brands fa-js icon"></i>
+        </div>
+        <h4>JS</h4>
+        <div class="progress p75"></div>
+        <div class="pourcent">75%</div>
+      </div>
+
+      <div class="item-competence">
+        <div class="icon-competence">
+          <i class="icon-twitter icon"></i>
+        </div>
+        <h4>Bootstrap</h4>
+        <div class="progress p80"></div>
+        <div class="pourcent">80%</div>
+      </div>
+      
+      
+
+      <div class="item-competence">
+        <i class="icon fa-brands fa-html5"></i>
+        <i class="icon fa-brands fa-css3-alt"></i>
+        <i class="icon fa-brands fa-uikit"></i>
+      </div>
+      
+    </div>
+  </section>
+
   <section id="services">
-    <h1>Services</h1>
-		<div class="container">
-			<div class="card">
-				<div class="content">
-					<div class="imgBx">
-						<img src="assets/img/programmation.png">
-					</div>
-					<div class="contentBx">
-						<h3>Programmation web statique<br><span>400$</span></h3>
-					</div>
-				</div>
-				<ul class="sci">
-					<li>
-						<a href="" id="cta">Me contacter</a>
-					</li>
-				</ul>
-			</div>
-			<div class="card">
-				<div class="content">
-					<div class="imgBx">
-						<img src="assets/img/programmation web back.png">
-					</div>
-					<div class="contentBx">
-						<h3>Programmation web back-end<br><span>1000$</span></h3>
-					</div>
-				</div>
-				<ul class="sci">
-					<li>
-						<a href="" id="cta">Me contacter</a>
-					</li>
-				</ul>
-			</div>
-			<div class="card">
-				<div class="content">
-					<div class="imgBx">
-						<img src="assets/img/redaction.png">
-					</div>
-					<div class="contentBx">
-						<h3>Redaction des contenus<br><span>20$ - 5000 mots</span></h3>
-					</div>
-				</div>
-				<ul class="sci">
-					<li>
-						<a href="" id="cta">Me contacter</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
+    <div class="container-align-center">
+      <h3 class="align-center title">Services</h3>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <div class="imgBx">
+                    <img src="assets/img/programmation.png" alt="Création des sites web">
+                </div>
+                <div class="contentBx">
+                    <h3>Création des sites web<br><span>À partir de 400$</span></h3>
+                </div>
+            </div>
+            <ul class="sci">
+                <li>
+                    <a href="#contact" class="cta-button">Me contacter</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="imgBx">
+                    <img src="assets/img/programmation web back.png" alt="Refonte du site web">
+                </div>
+                <div class="contentBx">
+                    <h3>Refonte du site web<br><span>À partir de 300$</span></h3>
+                </div>
+            </div>
+            <ul class="sci">
+                <li>
+                    <a href="#contact" class="cta-button">Me contacter</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="imgBx">
+                    <img src="assets/img/programmation web back.png" alt="Création d'appli web">
+                </div>
+                <div class="contentBx">
+                    <h3>Création d'appli web<br><span>À partir de 600$</span></h3>
+                </div>
+            </div>
+            <ul class="sci">
+                <li>
+                    <a href="#contact" class="cta-button">Me contacter</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="imgBx">
+                    <img src="assets/img/redaction.png" alt="Rédaction des contenus">
+                </div>
+                <div class="contentBx">
+                    <h3>Rédaction des contenus<br><span>20$ - 5000 mots</span></h3>
+                </div>
+            </div>
+            <ul class="sci">
+                <li>
+                    <a href="#contact" class="cta-button">Me contacter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
   <section id="realisation">
-    <h1>Realisations</h1>
+    <div class="container-align-center">
+      <h3 class="align-center title">Realisations</h3>
+    </div>
     <div class="container-realisation">
 
       <div class="item-realisation">
         <div class="img-realisation">
-          <img src="assets/img/redaction.png" alt="" srcset="">
+          <img src="assets/img/underline.png" alt="" srcset="">
         </div>
-        <h3>gedeonmabengi.com</h3>
-        <a><i class="icon-globe"></i></a> | <a href="code"><i class="icon-github"></i></a>
-        <div class="container-description-realisation">
-          Mon blog personnelle fait avec Laravel.
+        <h4>Un effet de soulignement progressive en css</h4>
+        <div class="description-realisation">
+          Dans cette article, j'explique comment reproduire une effet de soulignement progressif
         </div>
+        <a href="https://gedeonmabengi.hashnode.dev/comment-creer-un-effet-de-soulignement-progressif-avec-html-et-css"><i class="fa fa-link icon"></i></a> | <a href="code"><i class="fa-brands fa-github icon"></i></a>
       </div>
       
       <div class="item-realisation">
         <div class="img-realisation">
-          <img src="assets/img/redaction.png" alt="" srcset="">
+          <img src="assets/img/menu.png" alt="" srcset="">
         </div>
-        <h3>Un menu deroulant en HTML/CSS</h3>
-        <a><i class="icon-globe"></i></a> | <a href="code"><i class="icon-github"></i></a>
-        <div class="container-description-realisation">
+        <h4>Un menu deroulant en HTML/CSS</h4>
+        <div class="description-realisation">
           Un article qui explique comment faire un menu deroulant juste en HTML et CSS
         </div>
+        <a><i class="fa fa-link icon"></i></a> | <a href="code"><i class="fa -fa-brands icon-github icon"></i></a>
       </div>
 
       <div class="item-realisation">
         <div class="img-realisation">
           <img src="assets/img/redaction.png" alt="" srcset="">
         </div>
-        <h3>Militas</h3>
-        <a><i class="icon-globe"></i></a> | <a href="code"><i class="icon-github"></i></a>
-        <div class="container-description-realisation">
-          Une application faite de Laravel et UIKIT. Pour la gestion du personnelle militaire.
+        <h4>Mon portfolio</h4>
+        <div class="description-realisation">
+          Avec HTML&CSS, fontAwesomw et slick.
         </div>
+        <a><i class="fa fa-link icon"></i></a> | <a href="code"><i class="fa fa-github icon"></i></a>
       </div>
 
       <div class="item-realisation">
         <div class="img-realisation">
-          <img src="assets/img/redaction.png" alt="" srcset="">
+          <img src="assets/img/celesttech.png" alt="" srcset="">
         </div>
-        <h3>DevStore</h3>
-        <a><i class="icon-globe"></i></a> | <a href="code"><i class="icon-github"></i></a>
-        <div class="container-description-realisation">
-          Une application web permettant aux develloppeur de publier leur applications.
+        <h4>Celest Tech</h4>
+        <div class="description-realisation">
+          Le site web de l'entreprise celest tech. Avec Bootstrap
         </div>
-      </div>
-      
-      <div class="item-realisation">
-        <div class="img-realisation">
-          <img src="assets/img/redaction.png" alt="" srcset="">
-        </div>
-        <h3>celesttech.com</h3>
-        <a><i class="icon-globe"></i></a> | <a href="code"><i class="icon-github"></i></a>
-        <div class="container-description-realisation">
-          Le site vitrine de Celest Tech
-        </div>
-      </div>
-
-      <div class="item-realisation">
-        <div class="img-realisation">
-          <img src="assets/img/redaction.png" alt="" srcset="">
-        </div>
-        <h3>speed-E-commerce</h3>
-        <a><i class="icon-globe"></i></a> | <a href="code"><i class="icon-github"></i></a>
-        <div class="container-description-realisation">
-          Une application E-commerce.
-        </div>
+        <a><i class="fa fa-link icon"></i></a> | 
       </div>
     </div>
   </section>
   
   <section id="contact">
-    <h1>Contact</h1>
+    <div class="container-align-center">
+      <h3 class="align-center title">Contact</h3>
+    </div>
 
       <div class="container-contact">
         <div class="container-coordonne">
           
           <ul class="coordonne">
-            <li><i class="icon-markunread"> </i> : mabengikatamabaku@gmail.com</li>
-            <li><i class="icon-phone-square"> </i> : +243 980455916</li>
-            <li><i class="icon-whatsapp"> </i> : +243 980455916</li>
-            <li><i class="icon-telegram" ></i> : +243 852067958</li>
+            <li><a href="mailto:mabengikatambaku@gmail.com"><i class="fa fa-envelope icon"></i> mabengikatamabaku@gmail.com</a></li>
+            <li><a href="https://t.me/@GedeonMabengi"><i class="fa fa-phone icon"></i> +243 980455916</a></li>
+            <li><a href="https://"><i class="fa fa-whatsapp icon"></i> +243 980455916</a></li>
+            <li><a href="https://t.me/@GedeonMabengi"><i class="fa-brands fa-telegram icon"></i> +243 852067958</a></li>
           </ul>
 
           <p>N'hésitez pas à me contacter pour toute demande d'information ou de collaboration :</p>
@@ -265,52 +289,52 @@
 
       <h4>Réseaux sociaux :</h4>
       <ul class="social">
-          <li><a href="https://www.linkedin.com/gedeon-mabengi"><i class="icon-linkedin"></i></a></li>
-          <li><a href="https://www.twitter.com/votreprofil"><i class="icon-twitter"></i></a></li>
-          <li><a href="https://www.github.com/votreprofil"><i class="icon-github"></i></a></li>
-          <li><a href="https://www.facebook.com/votreprofil"><i class="icon-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/votreprofil"><i class="icon-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/g%C3%A9d%C3%A9on-mabengi-24b932291"><i class="fa-brands fa-linkedin icon"></i></a></li>
+          <li><a href="https://twitter.com/MetaDevNFT"><i class="fa-brands fa-twitter icon"></i></a></li>
+          <li><a href="https://github.com/GedeonMabengi"><i class="fa-brands fa-github icon"></i></a></li>
         </ul>
     </div>
   </section>
 
   <section class="footer">
-    <ul id="menu-footer">
-      <li>Links</li>
-      <li><a href="index.html#">Acceuil</a></li>
-      <li><a href="index.html#apropos">A propos</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="index.html#realisation">Realisation</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
+    <div class="container-menu-footer">
+      <h4>Liens</h4>
+      <ul id="menu-footer">
+        <li class="foot-head">Links</li>
+        <li><a href="index.html#">Acceuil</a></li>
+        <li><a href="index.html#apropos">A propos</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#realisation">Realisation</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
 
-    <ul>
-      <li>Service</li>
-      <li><a href="">Programmation web statique</a></li>
-      <li><a href="">Programmation web back-end</a></li>
-      <li><a href="">Redaction des contenues</a></li>
-    </ul>
+    <div class="container-services-footer">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="">Création des sites web</a></li>
+        <li><a href="">Refonte du site web</a></li>
+        <li><a href="">Création d'appli web</a></li>
+        <li><a href="">Rédaction des contenus</a></li>
+      </ul>
+    </div>
 
-    <ul class="foot-social">
-      <li>Socials</li>
-      <li><a href="https://www.linkedin.com/gedeon-mabengi"><i class="icon-linkedin"></i></a></li>
-      <li><a href="https://www.twitter.com/votreprofil"><i class="icon-twitter"></i></a></li>
-      <li><a href="https://www.github.com/votreprofil"><i class="icon-github"></i></a></li>
-      <li><a href="https://www.facebook.com/votreprofil"><i class="icon-facebook"></i></a></li>
-      <li><a href="https://www.instagram.com/votreprofil"><i class="icon-instagram"></i></a></li>
-    </ul>
+    <div class="container-social-footer">
+      <h4>Socials</h4>
+      <ul class="foot-social">
+        <li><a href="https://www.linkedin.com/in/g%C3%A9d%C3%A9on-mabengi-24b932291"><i class="fa-brands icon fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/MetaDevNFT"><i class="fa-brands fa-twitter icon"></i></a></li>
+        <li><a href="https://github.com/GedeonMabengi"><i class="fa-brands fa-github icon"></i></a></li>
+      </ul>
+    </div>
   </section>
 
   <div id="copyrigth">
     &copy; <span>Mabengin Gédéon</span> 2024
   </div>
 
-  <script type="text/javascript" src="assets/vendor/jquery.min.js"></script>
-  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-  <script type="text/javascript" src="assets/vendor/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script type="text/javascript" src="assets/js/main.js"></script>
-  
-
-  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script> -->
   </body>
 </html>
